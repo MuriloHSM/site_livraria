@@ -1,0 +1,159 @@
+/* reset dos padroes de navegador */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Cabeçalho para site */
+header {
+    background-color: #1cd2ff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header nav {
+ /* width: 100%; */
+}
+
+header nav li,
+header nav a {
+    display: inline-block;
+}
+
+/* Definir aparência dos links */
+header nav li a,
+header nav li a:visited {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
+
+/* Definir aparência dos links no hover */
+header nav li a:hover {
+    color: #ffffff;
+    background-color: #ffad50;
+}
+
+h2 {
+    margin: 4px;
+}
+
+ol,
+ul,
+p {
+    margin-bottom: 4px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Regras para as tags */
+
+body {
+    background-color: hsl(81, 100%, 91%);
+    color: darkslategrey;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+
+
+main {
+    min-height: 600px;
+    padding: 20px
+}
+
+footer {
+    padding: 20px;
+    background-color: #1cd2ff;
+}
+
+footer nav {
+    width: 380px;
+}
+
+/* ocultar os marcadores da lista dentro de nav */
+footer nav ul {
+    list-style-type: none;
+}
+
+/* Converter li e a para comportamento de bloco */
+footer nav li,
+footer nav a {
+    display: block;
+}
+
+/* Definir aparência dos links */
+footer nav li a,
+footer nav li a:visited {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
+
+/* Definir aparência dos links no hover */
+footer nav li a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/* Regra para as classes */
+.logo {
+    display: block;
+    width: 190px;
+    height: 190px;
+}
+
+
+.destaques{
+    width:80%;
+    padding: 10px;
+    background-color: rgb(162, 183, 190);
+    border:1px solid #00657e
+}
+
+.destaques a{margin: 20px;}
+/* regras para os ids */
+#btn-whats {
+    width: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: #000;
+    
+}
+#whats-message{
+    width: 250px;
+    padding: 10px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    display: none
+}
+
