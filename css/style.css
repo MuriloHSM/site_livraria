@@ -21,8 +21,8 @@ header {
 }
 
 header nav {
- /* width: 100%; */
-}
+     width: 100%;
+} 
 
 header nav li,
 header nav a {
@@ -129,14 +129,17 @@ footer nav li a:hover {
 }
 
 
-.destaques{
-    width:80%;
+.destaques {
+    width: 80%;
     padding: 10px;
     background-color: rgb(162, 183, 190);
-    border:1px solid #00657e
+    border: 1px solid #00657e
 }
 
-.destaques a{margin: 20px;}
+.destaques a {
+    margin: 20px;
+}
+
 /* regras para os ids */
 #btn-whats {
     width: 80px;
@@ -145,9 +148,10 @@ footer nav li a:hover {
     right: 20px;
     cursor: pointer;
     background-color: #000;
-    
+
 }
-#whats-message{
+
+#whats-message {
     width: 250px;
     padding: 10px;
     background-color: #fff;
@@ -157,3 +161,18 @@ footer nav li a:hover {
     display: none
 }
 
+
+
+
+/* comportamento do celular */
+@media screen and (max-width:600px){
+   /*  no celular oculta menu de celular */
+header nav{
+    display: none;
+}
+   /* exibe o menu de celular */
+    .teste-menu-responsivo{
+    display: block;
+}
+
+}
